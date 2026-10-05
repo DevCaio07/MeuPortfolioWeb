@@ -105,7 +105,7 @@ body{
 }
 
 
-.gaarantia{ 
+.gaarantia { 
     margin-top: 50px;
     padding: 0 50px;
     display: flex;
@@ -113,15 +113,19 @@ body{
     gap: 24px;
 }
 
-.gaarantia item{
-    background: #280f5f;
+.gaarantia .item{
+    background: #3e78ff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100px;
-    width: 100px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 0 30px;
+    border: 1px solid transparent; 
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
 }
 
-.gaarantia info{
-    color: #fff;
-}
+
