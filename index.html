@@ -1,65 +1,158 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfolio Web</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Caio Fernando — Backend Developer | Java • Spring Boot</title>
+<meta name="description" content="Portfólio de Caio Fernando, estudante de Engenharia de Software no CEUB com foco em desenvolvimento backend com Java e Spring Boot.">
+<meta name="theme-color" content="#05070b">
+<meta property="og:title" content="Caio Fernando — Backend Developer">
+<meta property="og:description" content="Java • Spring Boot. Projetos práticos, APIs e evolução contínua.">
+<meta property="og:type" content="website">
+<!-- Favicon simples em SVG inline -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2305070b'/%3E%3Ctext x='16' y='22' font-size='15' font-family='sans-serif' font-weight='700' fill='%2338bdf8' text-anchor='middle'%3ECF%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="style.css">
 </head>
-<body> 
+<body>
+<a class="skip" href="#main">Pular para o conteúdo</a>
+<div class="spot" aria-hidden="true"></div>
+<div class="cur-dot" aria-hidden="true"></div><div class="cur-ring" aria-hidden="true"></div>
 
-   <div class="navbar">
-        <h2> Caio Fernando</h2>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">Sobre</a></li>
-            </ul>
-        <button>  Fazer Orçamento </button>
-   </div>
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a class="logo" href="#home" aria-label="Caio Fernando, início">CF<span>.</span></a>
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><i></i><i></i></button>
+    <nav id="menu" aria-label="Principal">
+      <a href="#home">Home</a><a href="#sobre">Sobre</a><a href="#skills">Skills</a><a href="#projetos">Projetos</a><a href="#jornada">Experiência</a><a href="#contato">Contato</a>
+    </nav>
+  </div>
+</header>
 
-   <div class="main">
-    <h4> Me chamo Caio Fernando</h4>
-    <p class="titulo"> C#/.NET Developer  </p>
-    <p class="subtitulo"> Desenvolvedor Backend em constante evolução, transformando aprendizado em soluções.
-</p>
-
-        <img src="images/EU.png" alt="Minha Foto">
-   </div>
-    
-
-   <div class="gaarantia"> 
-        <div class="item">
-            <div class="icon">
-                <i class="bx bx-seal-check"> </i> 
-            </div>
-        <div class="info">
-                <h3>5</h3> 
-                <p> Meses de Experiência</p>
-            </div>
-
-            <div class="item">
-            <div class="icon">
-                <i class="bx bx-bug-alt"></i>
-            </div>
-        <div class="info">
-                <h3>Java e SpringBoot</h3> 
-                <p> Praticando Java e Spring Boot através de projetos reais e desafios constantes.</p>
-            </div>
-
-               <div class="item">
-            <div class="icon">
-                <i class="bx bx-chevrons-left-right" ></i>
-            </div>
-        <div class="info">
-                <h3>C# e .NET</h3> 
-                <p> Meses de Experiência</p>
-            </div>
+<main id="main">
+<section class="hero" id="home">
+  <div class="grid-bg" aria-hidden="true"></div>
+  <div class="glow g1" data-px="18" aria-hidden="true"></div>
+  <div class="glow g2" data-px="-26" aria-hidden="true"></div>
+  <div class="wrap hero-in">
+    <div class="hero-txt">
+      <p class="status rise" style="--d:.1s"><span class="pulse"></span>Open to opportunities</p>
+      <p class="kicker rise" style="--d:.2s">Caio Fernando · Software Engineering Student</p>
+      <h1 class="rise" style="--d:.3s">Backend<br>Developer</h1>
+      <p class="stack rise" style="--d:.45s">Java • Spring Boot</p>
+      <p class="lead rise" style="--d:.55s">Estudo Engenharia de Software e construo APIs e sistemas backend com Java e Spring Boot. Cada conceito novo vira um projeto no GitHub.</p>
+      <div class="btns rise" style="--d:.7s">
+        <a class="btn pri mag" href="#projetos">Ver projetos</a>
+        <a class="btn mag" href="https://github.com/DevCaio07" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn mag" href="https://www.linkedin.com/in/caiofernandoguimaraes" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
     </div>
+    <div class="code float rise" style="--d:.8s" aria-hidden="true">
+      <div class="code-bar"><i></i><i></i><i></i><span>BookController.java</span></div>
+<pre><b>@RestController</b>
+<b>@RequestMapping</b>("/books")
+class BookController {
+  <b>@GetMapping</b>
+  List&lt;Book&gt; list() {
+    return service.findAll();
+  }
+}</pre>
+      <p class="cap">Ilustração decorativa</p>
+    </div>
+  </div>
+</section>
 
+<section class="sec" id="sobre">
+  <div class="wrap two">
+    <div class="rv">
+      <h2>Sobre mim</h2>
+      <p>Sou estudante de Engenharia de Software no CEUB e meu foco é desenvolvimento backend. Java e Spring Boot são minhas principais tecnologias, e estudo C# e .NET como segunda frente para ampliar minha atuação em APIs.</p>
+      <p>Gosto de transformar conceitos em projetos práticos. Tenho interesse em APIs, arquitetura e banco de dados, e estou construindo minha carreira em tecnologia com consistência.</p>
+    </div>
+    <ul class="tags rv" style="--d:.15s">
+      <li>Backend Development</li><li>Java &amp; Spring Boot</li><li>Software Engineering</li><li>Continuous Learning</li>
+    </ul>
+  </div>
+</section>
 
+<section class="sec" id="skills">
+  <div class="wrap">
+    <h2 class="rv">Skills</h2>
+    <p class="sub rv">Java e Spring Boot são o centro da minha stack. O restante complementa.</p>
+    <div id="skills"></div>
+  </div>
+</section>
 
+<section class="sec" id="projetos">
+  <div class="wrap">
+    <h2 class="rv">Projetos</h2>
+    <p class="sub rv">Código real no GitHub, organizado por aprendizado.</p>
+    <article class="feat rv">
+      <div class="feat-txt">
+        <p class="meta">Projeto em destaque · Java · OOP</p>
+        <h3>Management System Library</h3>
+        <p>Um sistema desenvolvido para aplicar conceitos de Programação Orientada a Objetos na prática.</p>
+        <ul class="chips"><li>Java</li><li>OOP</li></ul>
+        <a class="btn pri mag" href="https://github.com/DevCaio07/Management-System-Library.git" target="_blank" rel="noopener">View on GitHub</a>
+      </div>
+      <div class="viz" aria-hidden="true"><span class="l w1"></span><span class="l w2"></span><span class="l w3"></span><span class="l w4"></span><span class="l w2"></span></div>
+    </article>
+    <div class="pgrid" id="pgrid"></div>
+  </div>
+</section>
 
+<section class="sec" id="jornada">
+  <div class="wrap two">
+    <div class="rv"><h2>Minha jornada</h2><p class="sub">Uma trajetória em construção, sem atalhos.</p></div>
+    <ol class="tl" id="tl">
+      <li class="rv"><b>Engenharia de Software — CEUB</b><span>Base acadêmica da minha carreira.</span></li>
+      <li class="rv"><b>Desenvolvimento Backend</b><span>Foco principal de estudo e prática.</span></li>
+      <li class="rv"><b>Java &amp; Spring Boot</b><span>Minha stack central.</span></li>
+      <li class="rv"><b>Estudos de C# &amp; .NET</b><span>Segunda frente, em aprendizado.</span></li>
+      <li class="rv"><b>Projetos práticos</b><span>Do terminal a APIs com MySQL.</span></li>
+      <li class="rv"><b>Aprendizado contínuo</b><span>Evoluindo a cada projeto.</span></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec" id="educacao">
+  <div class="wrap">
+    <div class="edu rv">
+      <div><p class="meta">Formação</p><h3>Engenharia de Software</h3><p>CEUB</p></div>
+      <span class="badge">Em andamento</span>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="github">
+  <div class="wrap gh rv">
+    <div><h2>Code, build, learn, repeat.</h2><p class="sub">@DevCaio07</p></div>
+    <div class="gh-cards"><div>Repositories</div><div>Projects</div><div>Contributions</div></div>
+    <a class="btn pri mag" href="https://github.com/DevCaio07" target="_blank" rel="noopener">Visit GitHub</a>
+  </div>
+</section>
+
+<section class="sec cta" id="contato">
+  <div class="wrap rv">
+    <h2>Vamos construir algo?</h2>
+    <p class="sub">Estou aberto a oportunidades, projetos e conexões na área de desenvolvimento de software.</p>
+    <div class="btns">
+      <a class="btn mag" href="https://github.com/DevCaio07" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn mag" href="https://www.linkedin.com/in/caiofernandoguimaraes" target="_blank" rel="noopener">LinkedIn</a>
+      <!-- TROQUE o email abaixo pelo seu -->
+      <a class="btn pri mag" href="mailto:caiotech.devbr@gmail.com">Enviar email</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot"><div class="wrap">
+  <div><b>Caio Fernando</b><p>Backend Developer · Java • Spring Boot</p></div>
+  <div class="fl"><a href="https://github.com/DevCaio07" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/caiofernandoguimaraes" target="_blank" rel="noopener">LinkedIn</a></div>
+  <p>© 2026 Caio Fernando</p>
+</div></footer>
+<script src="script.js"></script>
 </body>
+</html>
